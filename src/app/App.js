@@ -18,7 +18,7 @@ class App extends Component {
 
   loadQuote() {
     this.setState({ quote: null });
-    fetch('http://ron-swanson-quotes.herokuapp.com/v2/quotes')
+    fetch('https://ron-swanson-quotes.herokuapp.com/v2/quotes')
       .then(response => response.json())
       .then(jsonResponse => this.setState({ quote: jsonResponse[0] }));
   }
